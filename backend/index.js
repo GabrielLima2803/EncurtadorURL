@@ -18,6 +18,7 @@ app.use("/url", urlRouter);
 
 app.get("/:shortId", async (req, res) => {
   const shortId = req.params.shortId;
+  console.log("Short ID:", shortId);
 
   const entry = await URL.findOneAndUpdate(
     {
@@ -31,6 +32,8 @@ app.get("/:shortId", async (req, res) => {
       },
     }
   );
+
+  console.log("Entry:", entry);
 
   res.redirect(entry.redirectURL);
 });
