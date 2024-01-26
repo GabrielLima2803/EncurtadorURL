@@ -6,8 +6,6 @@ import Icons from "@/components/others/Icons";
 import Link from "next/link";
 
 export default function Home() {
-
-
   return (
     <div className="bg-gray-800 text-white text-center">
       <Icons />
