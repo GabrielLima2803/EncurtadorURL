@@ -6,6 +6,9 @@ const DOMAIN = 'http://localhost:3000';
 async function generateNewShortURL(req, res) {
     const body = req.body;
 
+    console.log('Body:', body); 
+
+
     if (!body || !body.url) {
         return res.status(400).json({ err: 'URL precisa ser passada' });
     }
@@ -26,6 +29,10 @@ async function getAnalytics(req, res) {
     const shortId = req.params.shortId;
 
     const result = await URL.findOne({ shortId });
+
+    if (!result) {
+        return res.status(404).json({ err: 'URL não encontrada' });
+    }
 
     return res.json({ totalClicks: result.visitHistory.length, analytics: result.visitHistory });
 }
