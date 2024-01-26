@@ -3,7 +3,7 @@ export default function Footer() {
       <div className="bg-gray-800 text-white p-10 text-center mt-auto">
         <h1 className="text-lg mb-4">Feito por Gabriel Lima De Souza</h1>
         <a
-          href="https://github.com/GabrielLima2803/"
+          href="https://github.com/GabrielLima2803/EncurtadorURL"
           target="_blank"
           rel="noopener noreferrer"
           className="no-underline text-white"
