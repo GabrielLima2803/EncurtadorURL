@@ -4,6 +4,7 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import Footer from "../components/footer/Footer";
 import Icons from "../components/others/Icons";
 import Image from '../assets/img/www-rafiki.png'
+import SvgComponent from './../components/Img-Svg/SvgComponent';
 
 export default function Home() {
   return (
@@ -16,12 +17,8 @@ export default function Home() {
           comunicações online conosco!
         </p>
         <div className="flex justify-center items-center">
-          <img
-            src={Image}
-            alt="Imagem de boas-vindas"
-            width={500}
-            height={500}
-          />
+  
+        <SvgComponent/>
         </div>
         <a href="/url"> 
           <button className="button-30 mt-4 text-black" role="button">
