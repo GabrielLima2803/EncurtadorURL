@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import shortenURL from '../../api/shortenURL';
 import Footer from '../../components/footer/Footer';
 import Image from '../../assets/img/www-rafiki.png';
+import SvgComponent from '../../components/Img-Svg/SvgComponent';
 
 export default function PageURL() {
   const [originalURL, setOriginalURL] = useState('');
@@ -68,11 +69,9 @@ export default function PageURL() {
       )}
 
       <div className="flex justify-center items-center">
-        <img
-          src={Image}
-          alt="Imagem de boas-vindas"
-          className="w-full max-w-xl my-4"
-        />
+
+                <SvgComponent/>
+
       </div>
 
       <div className="flex justify-center items-center">
