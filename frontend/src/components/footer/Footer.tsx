@@ -1,6 +1,6 @@
 export default function Footer() {
     return (
-      <div className="bg-gray-800 text-white p-10 text-center mt-auto">
+      <div className="bg-gray-800 text-white p-10 text-center mt-auto pt-24">
         <h1 className="text-lg mb-4">Feito por Gabriel Lima De Souza</h1>
         <a
           href="https://github.com/GabrielLima2803/EncurtadorURL"
